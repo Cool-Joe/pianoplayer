@@ -75,6 +75,11 @@ def keypos(n): #position of notes on keyboard
     elif n.name == 'G-' : step = k *4.
     elif n.name == 'A-' : step = k *5.
     elif n.name == 'B-' : step = k *6.
+    elif n.name == 'C##': step = k *1.5
+    elif n.name == 'D##': step = k *2.5
+    elif n.name == 'F##': step = k *4.5
+    elif n.name == 'G##': step = k *5.5
+    elif n.name == 'A##': step = k *6.5        
     else:
         print("ERROR note not found", n.name)
     return keybsize * n.octave + step
